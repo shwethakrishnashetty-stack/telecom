@@ -13,7 +13,12 @@ helmCharts:
   - name: nginx
     releaseName: nginx-dev
     namespace: telecom-dev
-    repo: https://shwethakrishnashetty-stack.github.io/telecom/charts
+# Packge stored in github charts with index.yaml 
+#     repo: https://shwethakrishnashetty-stack.github.io/telecom/charts
+
+# package and stored in https://github.com/users/shwethakrishnashetty-stack/packages/container/package/my-nginx
+
+    repo: oci://ghcr.io/shwethakrishnashetty-stack/my-nginx
     version: 0.1.0
     valuesFile: ../../helm-charts/nginx/values.yaml
     additionalValuesFiles:
