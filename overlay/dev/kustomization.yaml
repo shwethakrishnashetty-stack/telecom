@@ -19,7 +19,7 @@ helmCharts:
 # package and stored in https://github.com/users/shwethakrishnashetty-stack/packages/container/package/my-nginx
 
     repo: oci://ghcr.io/shwethakrishnashetty-stack/my-nginx
-    version: 0.1.0
+    version: 0.2.0
     valuesFile: ../../helm-charts/nginx/values.yaml
     additionalValuesFiles:
       - values.yaml

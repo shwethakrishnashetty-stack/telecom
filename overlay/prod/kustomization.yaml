@@ -11,7 +11,7 @@ helmCharts:
    - name: nginx
      releaseName: nginx-prod
      namespace: telecom-prod
-     version: 0.1.0
+     version: 0.2.0
 #     repo: ""
      repo: https://shwethakrishnashetty-stack.github.io/telecom/charts 
      valuesFile: "../../helm-charts/nginx/values.yaml"
