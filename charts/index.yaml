@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  nginx:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-11-07T17:46:25.141693994+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 08caf786f8d46fdc515ecdef3a2313faec4c877446f79b568ce155fd2e9b29f8
+    name: nginx
+    type: application
+    urls:
+    - https://shwethakrishnashetty-stack.github.io/telecom/charts/nginx-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-11-07T17:46:25.140591632+05:30"
