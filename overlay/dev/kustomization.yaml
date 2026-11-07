@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
+namespace: telecom-dev
+
+
+helmGlobals: 
+    chartHome: ../../helm-charts
+
+
+helmCharts:
+  - name: nginx
+    releaseName: nginx-dev
+    namespace: telecom-dev
+  # repo: ""
+    version: 0.1.0
+    valuesFile: ../../helm-charts/nginx/values.yaml
+    additionalValuesFiles:
+      - values.yaml
